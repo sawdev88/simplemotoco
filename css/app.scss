@@ -7,6 +7,79 @@ html {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+$ease: .3s ease-in-out;
+
+// Header
+header {
+  border-bottom: 2px solid #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: .25rem 0;
+}
+
+
+// Logo
+.logo {
+  position: relative;
+  transition: $ease;
+
+  img {
+    height: auto;
+    width: 2.5rem;
+  }
+  &,
+  h2 {
+    vertical-align: top;
+    display: inline-block;
+    margin: 0;
+  }
+}
+
+// Hamburger
+.fa-bars,
+.fa-close {
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+  z-index: 2;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// Main Nav
+.main-nav {
+  background: #fff;
+  display: inline-block;
+  position: fixed;
+  right: -24rem;
+  bottom: 0;
+  top: 0;
+  width: 24rem;
+  padding: 2rem;
+  transition: $ease;
+
+
+  ul {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+    li {
+
+    }
+
+    a {
+      color: #000;
+    }
+  }
+}
+
 .landing-banner {
   background: radial-gradient(
       circle at bottom right,
@@ -23,6 +96,7 @@ html {
 
     .fa-instagram {
       position: absolute;
+      font-size: 3rem;
       bottom: 2rem;
       right: 2rem;
     }
@@ -39,7 +113,45 @@ html {
 
     h2 {
       margin-top: -1rem;
-      padding-left: 20rem;
+      padding-left: 12rem;
+    }
+  }
+}
+
+
+// CUSTOM Classes //
+.center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// Show Nav
+.show-nav {
+  right: 0;
+
+}
+
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 6rem;
+  }
+
+  .landing-banner {
+
+    a {
+      font-size: 6rem;
+    }
+
+    .landing-container {
+      left: 1rem;
+      top: 2rem;
+
+      h2 {
+        padding: 1rem 0 0 0;
+        font-size: 2rem;
+        letter-spacing: 1px;
+      }
     }
   }
 }
