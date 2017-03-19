@@ -7,44 +7,23 @@ html {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 $ease: .3s ease-in-out;
-
-// Header
-header {
-  border-bottom: 2px solid #000;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: #fff;
-  padding: .25rem 0;
-}
-
-
-// Logo
-.logo {
-  position: relative;
-  transition: $ease;
-
-  img {
-    height: auto;
-    width: 2.5rem;
-  }
-  &,
-  h2 {
-    vertical-align: top;
-    display: inline-block;
-    margin: 0;
-  }
-}
 
 // Hamburger
 .fa-bars,
 .fa-close {
-  position: absolute;
+  position: fixed;
   right: 2rem;
   top: 1rem;
-  z-index: 2;
+  z-index: 12;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: .4rem .5rem;
+
 
   &:hover {
     cursor: pointer;
@@ -62,7 +41,7 @@ header {
   width: 24rem;
   padding: 2rem;
   transition: $ease;
-
+  z-index: 11;
 
   ul {
     list-style: none;
@@ -96,7 +75,7 @@ header {
 
     .fa-instagram {
       position: absolute;
-      font-size: 3rem;
+      font-size: 2rem;
       bottom: 2rem;
       right: 2rem;
     }
@@ -118,6 +97,60 @@ header {
   }
 }
 
+// Section Header
+.section-header {
+  position: relative;
+  margin-bottom: 1rem;
+
+  h1 {
+    display: inline-block;
+  }
+  img {
+    width: 6rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+
+// GAL
+#lightgallery {
+  a {
+    position: relative;
+
+    &:hover {
+      .img-overlay {
+        display: block;
+        transition: $ease;
+      }
+    }
+  }
+  img {
+    width: 32%;
+    margin: 0 .5% 1rem;
+    height: auto;
+    max-height: 20rem;
+    transition: $ease;
+  }
+  .img-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 1.5rem;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,.75);
+    padding: .5rem;
+    z-index: 2;
+    color: #fff;
+    transition: $ease;
+
+    small {
+      display: block;
+    }
+  }
+}
+
 
 // CUSTOM Classes //
 .center {
@@ -128,7 +161,13 @@ header {
 // Show Nav
 .show-nav {
   right: 0;
+}
 
+// Lightbox
+.lg-actual-size {
+  &:after {
+    content: '\e033';
+  }
 }
 
 
