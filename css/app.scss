@@ -53,11 +53,11 @@ a {
   font-size: 1.25rem;
   text-decoration: none;
   cursor: pointer;
-  color: #3da5d9;
+  color: #666;
+  transition: $ease;
 
   &:hover {
-    color: #3694c3;
-    transition: $ease;
+    color: #444;
   }
 }
 
@@ -138,11 +138,6 @@ hr {
 
   a {
     text-decoration: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 
     span {
       position: absolute;
@@ -449,14 +444,6 @@ hr {
     padding: 1rem;
     height: 20rem;
 
-    a {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
     p {
       margin-bottom: 0;
     }
@@ -517,7 +504,7 @@ hr {
   overflow-y: scroll;
 }
 
-#builders {
+#builders-container {
   .col-1 {
     text-align: center;
     height: auto;
@@ -554,15 +541,40 @@ hr {
   }
 }
 
+#garage-container {
+  flex: 3;
+  height: 80rem;
+  position: relative;
+
+  .garage-container {
+    background: url('../img/garage-bg.jpg') no-repeat center center / cover;
+    height: 16rem;
+    width: 100%;
+    color: #fff;
+    line-height: 16rem;
+    padding-left: 2rem;
+    font-size: 3rem;
+  }
+
+  .garage-items {
+    position: absolute;
+    top: 20rem;
+    bottom: 2rem;
+    left: 2rem;
+    right: 2rem;
+    border: 1px solid #333;
+  }
+}
+
 #resources-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex: 1;
+  flex-direction: column;
+  height: 80rem;
 
   .callout {
     display: flex;
-    width: 10rem;
-    height: 10rem;
+    width: 12rem;
+    height: 12rem;
     background: #aaa;
     border-radius: 50%;
     text-align: center;
@@ -572,6 +584,7 @@ hr {
     background-color: #aaa !important;
     background-blend-mode: multiply !important;
     transition: $ease;
+    margin-bottom: 2rem;
 
     &:hover {
       cursor: pointer;
