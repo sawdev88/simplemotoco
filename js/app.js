@@ -1,12 +1,12 @@
-
 $(function() {
 
   $(window).on('scroll', function () {
-    // Slide logo o left
-    $('.logo').css({
-      'left': '2rem',
-      'transform': 'translateX(0)'
-    });
+    var position = $(window).scrollTop();
+
+    if (position < 360) {
+      $('.landing-banner').css('marginTop', -position);
+      $('.down-arrow').css('paddingBottom', (position * 1.2));
+    }
   })
 
   // Show Nav

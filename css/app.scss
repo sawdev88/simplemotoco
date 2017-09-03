@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-html, body, h1, h2 {
+html, body, h1, h2, h5 {
   margin: 0;
   padding: 0;
 }
@@ -69,14 +69,38 @@ hr {
 // ******************************** Globals
 .center-text {
   text-align: center;
+
+  p {
+    display: inline-block;
+    margin: 2rem .5rem 4rem;
+    font-size: 5rem;
+    color: #ccc;
+    vertical-align: -25%;
+  }
+
+  .fa {
+    font-size: 3rem;
+  }
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .section-padding {
-  padding: 8rem 0 4rem;
+  padding: 2rem;
 }
 
 .small-left-padding {
-  padding-left: 1rem
+  padding: 0 0 1rem 1rem;
+}
+
+.bg {
+  background: #efefef;
 }
 
 .table-row {
@@ -96,6 +120,14 @@ hr {
 .single-tile {
   height: 22rem;
   width: 100%;
+}
+
+.margin-left {
+  margin-left: 1rem;
+}
+
+.margin-right {
+  margin-right: 1rem;
 }
 
 .col-1 {
@@ -346,12 +378,15 @@ hr {
 // ************************************ Containers
 .container {
   width: 95%;
-  margin: 2rem auto 8rem;
+  margin: 0 auto;
+  padding: 2rem 0 8rem;
+  background: #fff;
+  position: relative;
+  z-index: 2;
 }
 
 #about-container {
   flex: 2;
-  background: #efefef;
   height: 30rem;
   justify-content: center;
   padding: 0 4rem;
@@ -369,7 +404,6 @@ hr {
 #featured-item-container {
   flex: 1;
   height: 30rem;
-  background: #efefef;
   padding: 4rem 1rem;
   margin-left: 1rem;
 }
@@ -400,7 +434,6 @@ hr {
 #featured-builders {
   text-align: center;
   flex: 1;
-  background: #efefef;
 
 
   img {
@@ -441,32 +474,124 @@ hr {
 
 #featured-merch {
   flex: 2;
-  background: #efefef;
   height: 34rem;
   margin: 0 0 1rem 1rem;
   padding: 2rem;
 
   .col-1 {
-    text-align: center;
     margin-bottom: 3rem;
+    text-align: center;
     position: relative;
+    z-index: 1;
 
-    a {
-      top: auto;
-      bottom: -2rem;
+    .callout {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      z-index: 2;
+      display: block;
+      background: #000;
+      color: #fff;
+      opacity: 0;
+      padding: .25rem 0;
+      transition: $ease;
+    }
+
+    span {
+      display: block;
+    }
+
+    &:hover {
+      .callout {
+        opacity: 1;
+      }
     }
   }
 }
 
 #inspiration-container {
   flex: 2;
-  background: #efefef;
   height: 42rem;
   margin: 1rem 0 0 1rem;
   padding: 2rem;
   overflow-y: scroll;
 }
 
+#builders {
+  .col-1 {
+    text-align: center;
+    height: auto;
+  }
+
+  .callout {
+    flex: 1;
+    margin: .5rem;
+    padding: 1rem;
+    background: #fff;
+    height: 16rem;
+
+    img {
+      width: 8.5rem;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .shop-callout {
+    color: #fff;
+    background: #000;
+    padding: .5rem 0;
+    margin-top: 4rem;
+  }
+
+  h4 {
+    margin: 1rem;
+  }
+}
+
+#resources-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .callout {
+    display: flex;
+    width: 10rem;
+    height: 10rem;
+    background: #aaa;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #aaa !important;
+    background-blend-mode: multiply !important;
+    transition: $ease;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #ccc !important;
+    }
+  }
+
+  span {
+    background: #333;
+    color: #fff;
+    padding: .5rem;
+    transition: $ease;
+    border-radius: 5px;
+  }
+
+  h4 {
+    display: inline-block;
+    padding-left: 1rem;
+  }
+}
 
 
 
