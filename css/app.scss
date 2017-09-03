@@ -1,10 +1,16 @@
-h1 {
-  font-family: 'Lobster', cursive;
-  font-size: 6rem;
+* {
+  box-sizing: border-box;
+}
+
+html, body, h1, h2 {
+  margin: 0;
+  padding: 0;
 }
 
 html {
+  font-size: 1vw;
   font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: .05rem;
 }
 
 body {
@@ -13,22 +19,145 @@ body {
 
 $ease: .3s ease-in-out;
 
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 8rem;
+}
+
+h2 {
+  font-size: 3.25rem;
+}
+
+h3 {
+  font-size: 3.5rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  letter-spacing: .1rem;
+}
+
+a {
+  font-size: 1.25rem;
+  text-decoration: none;
+  cursor: pointer;
+  color: #3da5d9;
+
+  &:hover {
+    color: #3694c3;
+    transition: $ease;
+  }
+}
+
+hr {
+  margin: 4rem 0;
+  border-top-color: #fff;
+}
+
+// ******************************** Globals
+.center-text {
+  text-align: center;
+}
+
+.section-padding {
+  padding: 8rem 0 4rem;
+}
+
+.small-left-padding {
+  padding-left: 1rem
+}
+
+.table-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.table-column {
+  display: flex;
+}
+
+.clear {
+  clear: both;
+}
+
+.single-tile {
+  height: 22rem;
+  width: 100%;
+}
+
+.col-1 {
+  flex: 1;
+  height: 16rem;
+  margin: 0 1rem 2rem;
+  position: relative;
+
+  a {
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    span {
+      position: absolute;
+      bottom: .5rem;
+      right: .5rem;
+      color: #fff;
+      font-size: 2rem;
+      background: #000;
+      padding: .5rem;
+      opacity: 0;
+      transition: $ease;
+    }
+
+    &:hover {
+      span {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.col-2 {
+  flex: 2;
+  margin-left: 1rem;
+
+  hr {
+    margin: 1.95rem 0 1.95rem 1rem;
+  }
+}
+
 // Hamburger
 .fa-bars,
 .fa-close {
   position: fixed;
   right: 2rem;
-  top: 1rem;
+  top: 2rem;
   z-index: 12;
   border: 1px solid #000;
   border-radius: 5px;
   padding: .4rem .5rem;
-
+  font-size: 1.5rem !important;
 
   &:hover {
     cursor: pointer;
   }
 }
+
 
 // Main Nav
 .main-nav {
@@ -42,6 +171,20 @@ $ease: .3s ease-in-out;
   padding: 2rem;
   transition: $ease;
   z-index: 11;
+
+  .social-callouts {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+
+    .fa {
+      font-size: 2.5rem;
+    }
+
+    a {
+      color: #333;
+    }
+  }
 
   ul {
     list-style: none;
@@ -59,14 +202,24 @@ $ease: .3s ease-in-out;
   }
 }
 
+
+// Landing Banner
 .landing-banner {
   background: radial-gradient(
       circle at bottom right,
       #fff,
       transparent 60%
-    ), url('../img/street.jpg') no-repeat center center / cover;
-  height: 100vh;
+    ), url('../img/street.jpg') no-repeat center center / cover fixed;
+  height: 99vh;
   width: 100%;
+
+  .down-arrow {
+    position: absolute;
+    bottom: 2rem;
+    left: 3rem;
+    font-size: 2rem;
+    color: #ccc;
+  }
 
   a {
     color: #000;
@@ -75,7 +228,7 @@ $ease: .3s ease-in-out;
 
     .fa-instagram {
       position: absolute;
-      font-size: 2rem;
+      font-size: 2.75rem !important;
       bottom: 2rem;
       right: 2rem;
     }
@@ -87,12 +240,24 @@ $ease: .3s ease-in-out;
 
   .landing-container {
     position: absolute;
-    left: 6rem;
+    left: 12rem;
     top: 6rem;
 
-    h2 {
+    h2,
+    span {
+      display: inline-block;
       margin-top: -1rem;
-      padding-left: 12rem;
+    }
+
+    h2 {
+      padding-left: 16rem;
+    }
+
+    span {
+      font-size: 2rem;
+      padding-left: 1rem;
+      letter-spacing: .1rem;
+      font-weight: 600;
     }
   }
 }
@@ -100,16 +265,18 @@ $ease: .3s ease-in-out;
 // Section Header
 .section-header {
   position: relative;
+  height: 14rem;
   margin-bottom: 1rem;
 
-  h1 {
+  .header-container {
     display: inline-block;
-  }
-  img {
-    width: 6rem;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 2rem;
+    left: 0;
+
+    h1 {
+      line-height: 5rem;
+    }
   }
 }
 
@@ -121,8 +288,7 @@ $ease: .3s ease-in-out;
 
     &:hover {
       .img-overlay {
-        display: block;
-        transition: $ease;
+        opacity: 1;
       }
     }
   }
@@ -130,11 +296,10 @@ $ease: .3s ease-in-out;
     width: 32%;
     margin: 0 .5% 1rem;
     height: auto;
-    max-height: 20rem;
-    transition: $ease;
+    max-height: 22rem;
   }
   .img-overlay {
-    display: none;
+    opacity: 0;
     position: absolute;
     top: 0;
     left: 1.5rem;
@@ -147,6 +312,14 @@ $ease: .3s ease-in-out;
 
     small {
       display: block;
+    }
+  }
+}
+
+.tall-photos {
+  #lightgallery {
+    img {
+      max-height: 26rem;
     }
   }
 }
@@ -169,6 +342,132 @@ $ease: .3s ease-in-out;
     content: '\e033';
   }
 }
+
+// ************************************ Containers
+.container {
+  width: 95%;
+  margin: 2rem auto 8rem;
+}
+
+#about-container {
+  flex: 2;
+  background: #efefef;
+  height: 30rem;
+  justify-content: center;
+  padding: 0 4rem;
+  margin-right: 1rem;
+
+  h3 {
+    &:before,
+    &:after {
+      content: ' ------------- ';
+      letter-spacing: -1px;
+    }
+  }
+}
+
+#featured-item-container {
+  flex: 1;
+  height: 30rem;
+  background: #efefef;
+  padding: 4rem 1rem;
+  margin-left: 1rem;
+}
+
+#gallery-slider {
+  background: url('../img/forest.jpg') no-repeat center center / cover;
+  flex: 1;
+  margin-right: 1rem;
+  height: 80rem;
+  text-align: center;
+  color: #fff;
+  padding-top: 12rem;
+
+  h2,
+  i {
+    line-height: 6rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  i {
+    font-size: 3.5rem;
+  }
+}
+
+#featured-builders {
+  text-align: center;
+  flex: 1;
+  background: #efefef;
+
+
+  img {
+    width: 12rem;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .single-tile {
+    position: relative;
+    margin: 2rem 0;
+    height: auto;
+    padding: 1rem;
+    height: 20rem;
+
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      background: #ccc;
+    }
+  }
+
+  h3 {
+    display: inline-block;
+    border-bottom: .2rem solid #333;
+  }
+}
+
+#featured-merch {
+  flex: 2;
+  background: #efefef;
+  height: 34rem;
+  margin: 0 0 1rem 1rem;
+  padding: 2rem;
+
+  .col-1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+
+    a {
+      top: auto;
+      bottom: -2rem;
+    }
+  }
+}
+
+#inspiration-container {
+  flex: 2;
+  background: #efefef;
+  height: 42rem;
+  margin: 1rem 0 0 1rem;
+  padding: 2rem;
+  overflow-y: scroll;
+}
+
+
 
 
 @media (max-width: 600px) {
