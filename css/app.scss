@@ -66,6 +66,26 @@ hr {
   border-top-color: #fff;
 }
 
+.stripe {
+  width: 100%;
+  height: 1rem;
+  margin: .5rem 0;
+}
+
+.red-stripe {
+  background: rgb(180,32,38);
+  margin-top: 2rem;
+}
+
+.orange-stripe {
+  background: rgb(243,124,31);
+}
+
+.yellow-stripe {
+  background: rgb(233,196,30);
+  margin-bottom: 2rem;
+}
+
 // ******************************** Globals
 .center-text {
   text-align: center;
@@ -128,6 +148,38 @@ hr {
 
 .margin-right {
   margin-right: 1rem;
+}
+
+.tooltip {
+  height: 16rem;
+  flex: 1;
+  margin: 0 1rem 2rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+
+  .callout {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 2;
+    display: block;
+    background: #000;
+    color: #fff;
+    opacity: 0;
+    padding: .25rem 0;
+    transition: $ease;
+  }
+
+  span {
+    display: block;
+  }
+
+  &:hover {
+    .callout {
+      opacity: 1;
+    }
+  }
 }
 
 .col-1 {
@@ -203,6 +255,7 @@ hr {
     position: absolute;
     bottom: 2rem;
     right: 2rem;
+    left: 2rem;
 
     .fa {
       font-size: 2.5rem;
@@ -239,6 +292,7 @@ hr {
     ), url('../img/street.jpg') no-repeat center center / cover fixed;
   height: 99vh;
   width: 100%;
+  transition: linear;
 
   .down-arrow {
     position: absolute;
@@ -295,62 +349,34 @@ hr {
   height: 14rem;
   margin-bottom: 1rem;
 
+  .stripes-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 4rem;
+  }
+
   .header-container {
     display: inline-block;
     position: absolute;
     bottom: 2rem;
-    left: 0;
+    left: 1rem;
+    padding: .5rem 2rem;
+    z-index: 2;
+    background: #fff;
 
     h1 {
-      line-height: 5rem;
+      position: relative;
+      z-index: 1;
+      line-height: 7rem;
+    }
+
+    a {
+      position: relative;
+      z-index: 2;
     }
   }
 }
-
-
-// GAL
-#lightgallery {
-  a {
-    position: relative;
-
-    &:hover {
-      .img-overlay {
-        opacity: 1;
-      }
-    }
-  }
-  img {
-    width: 32%;
-    margin: 0 .5% 1rem;
-    height: auto;
-    max-height: 22rem;
-  }
-  .img-overlay {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 1.5rem;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,.75);
-    padding: .5rem;
-    z-index: 2;
-    color: #fff;
-    transition: $ease;
-
-    small {
-      display: block;
-    }
-  }
-}
-
-.tall-photos {
-  #lightgallery {
-    img {
-      max-height: 26rem;
-    }
-  }
-}
-
 
 // CUSTOM Classes //
 .center {
@@ -464,36 +490,6 @@ hr {
   height: 34rem;
   margin: 0 0 1rem 1rem;
   padding: 2rem;
-
-  .col-1 {
-    margin-bottom: 3rem;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-
-    .callout {
-      position: absolute;
-      width: 100%;
-      bottom: 0;
-      z-index: 2;
-      display: block;
-      background: #000;
-      color: #fff;
-      opacity: 0;
-      padding: .25rem 0;
-      transition: $ease;
-    }
-
-    span {
-      display: block;
-    }
-
-    &:hover {
-      .callout {
-        opacity: 1;
-      }
-    }
-  }
 }
 
 #inspiration-container {
@@ -501,7 +497,19 @@ hr {
   height: 42rem;
   margin: 1rem 0 0 1rem;
   padding: 2rem;
-  overflow-y: scroll;
+
+  .col-1 {
+    background-color: #ddd !important;
+    background-blend-mode: multiply;
+
+    &:hover {
+      background-blend-mode: normal;
+    }
+  }
+
+  h4 {
+    margin: 0 0 1rem 0;
+  }
 }
 
 #builders-container {
@@ -563,6 +571,14 @@ hr {
     left: 2rem;
     right: 2rem;
     border: 1px solid #333;
+  }
+
+  .tooltip {
+    margin-bottom: 0;
+  }
+
+  h4 {
+    margin: 0;
   }
 }
 
@@ -627,6 +643,53 @@ hr {
   .fa {
     font-size: 2rem;
     margin: 0 .5rem .5rem;
+  }
+}
+
+
+
+// GAL
+#lightgallery {
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  li {
+    width: 30%;
+    height: 22rem;
+    margin: 1rem;
+  }
+
+  .item {
+    position: relative;
+
+    .callout {
+      position: absolute;
+      bottom: 4rem;
+      left: 1rem;
+      opacity: 0;
+      font-size: 1.5rem;
+      display: inline-block;
+      padding: .5rem;
+      color:  #fff;
+      background: #000;
+      transition: $ease;
+    }
+
+    span {
+      font-size: 1rem;
+      display: block;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      .callout {
+        opacity: 1;
+      }
+    }
   }
 }
 

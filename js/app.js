@@ -16,21 +16,23 @@ $(function() {
 
   })
 
-  $("#lightgallery").lightGallery();
+  $("#lightgallery").lightGallery({
+    selector: '.item'
+  });
 
-  $('#lightgallery img').each(function () {
-    var title = $(this).attr('alt')
-    var shop = $(this).data('shop');
-
-    if (shop === undefined) {
-      shop = '';
-    }
-
-    $(this).after(
-      '<div class="img-overlay">' + title +
-      '<small>' + shop + '</small>' +
-      '</div>'
-    )
-  })
+  // $('#lightgallery img').each(function () {
+  //   var title = $(this).attr('alt')
+  //   var shop = $(this).data('shop');
+  //
+  //   if (shop === undefined) {
+  //     shop = '';
+  //   }
+  //
+  //   $(this).after(
+  //     '<div class="img-overlay">' + title +
+  //     '<small>' + shop + '</small>' +
+  //     '</div>'
+  //   )
+  // })
 
 })

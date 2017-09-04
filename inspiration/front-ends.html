@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Simple Moto Co. | Handbuilt Culture | Front-ends</title>
-    <link rel="icon" href="img/favicon.png">
+    <link rel="icon" href=".../img/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/lightgallery.css">
-    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="../css/lightgallery.css">
+    <link rel="stylesheet" href="../css/app.min.css">
     <script src="https://use.fontawesome.com/09efc92c6d.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </head>
@@ -19,7 +19,7 @@
 
       <nav class="main-nav">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="../index.html">Home</a></li>
           <li><a href="#">Test</a></li>
           <li><a href="#">Test</a></li>
           <li><a href="#">Test</a></li>
@@ -33,93 +33,26 @@
 
       <div class="section-header">
         <div class="header-container">
-          <small>Gallery /</small>
+          <a href="./index.html"><small>Inspiration /</small></a>
           <h1>Front Ends</h1>
+        </div>
+
+        <div class="stripes-container">
+          <div class="stripe red-stripe"></div>
+          <div class="stripe orange-stripe"></div>
+          <div class="stripe yellow-stripe"></div>
         </div>
       </div>
 
       <div id="lightgallery">
-
-        <a
-        href="./img/front-end/meyerbuilt_CB550_front.jpg"
-        data-link="http://meyerbuiltmetalworks.com/projects/meyerbuilt-cb/">
-          <img src="./img/front-end/meyerbuilt_CB550_front.jpg"
-          alt="1976 CB550"
-          data-shop="Meyerbuilt">
-        </a>
-
-        <a
-        href="./img/front-end/scrambler-3.jpg"
-        data-link ="http://www.bikeexif.com/scrambler">
-          <img src="./img/front-end/scrambler-3.jpg" alt="Triumph Tramontana"
-          data-shop="David and Felipe Lopez">
-        </a>
-
-        <a
-        href="./img/front-end/2016_YAM_YBXVS950XR-ABRATSTYLE_EU_CUSTOM_STA_004.JPG"
-        data-link ="https://rocket-garage.blogspot.com/2016/10/new-yard-built-scr950-chequered-by-brat.html">
-          <img src="./img/front-end/2016_YAM_YBXVS950XR-ABRATSTYLE_EU_CUSTOM_STA_004.JPG" alt="SCR950 'Chequered'"
-          data-shop="Brat Style">
-        </a>
-
-        <a
-        href="./img/front-end/salty-51.jpeg"
-        data-link ="http://www.pipeburn.com/home/2013/11/02/1978-honda-cb400f-by-salty-speed-co.html">
-          <img src="./img/front-end/salty-51.jpeg" alt="1978 Honda CB400F"
-          data-shop="Salty Speed Co.">
-        </a>
-
-        <a
-        href="./img/front-end/acp1.JPG"
-        data-link ="http://www.hondatwins.net/forums/1-project-logs/30331-82-cm450e-cafe-racer-brat-inspired-4.html">
-          <img src="./img/front-end/acp1.JPG" alt="1982 CM450e"
-          data-shop="Honda Twins acp1">
-        </a>
-
-        <a
-        href="./img/front-end/yamaha-xs650-4.jpg"
-        data-link ="http://www.bikeexif.com/yamaha-xs650-2">
-          <img src="./img/front-end/yamaha-xs650-4.jpg" alt="1982 XS650"
-          data-shop="Classified Moto">
-        </a>
-
-        <a
-        href="./img/front-end/gb250.jpeg"
-        data-link ="http://bikevx.com/honda-gb250cc-cafe-brat-by-sabbath-bob-custom/">
-          <img src="./img/front-end/gb250.jpeg" alt="Honda GB250cc"
-          data-shop="Sabbath Bob Custom">
-        </a>
-
-        <a
-        href="./img/front-end/BMW-R100-Brat-Cafe-3-768x512.jpg"
-        data-link ="http://www.bikebound.com/2016/08/09/bmw-r100r-brat-cafe/">
-          <img src="./img/front-end/BMW-R100-Brat-Cafe-3-768x512.jpg" alt="1992 BMW R100R"
-          data-shop="Rough Cycles">
-        </a>
-
-        <a
-        href="./img/front-end/honda-cb250-1.jpg"
-        data-link ="http://www.bikeexif.com/custom-honda-cb250">
-          <img src="./img/front-end/honda-cb250-1.jpg" alt="HONDA CB250"
-          data-shop="OEM">
-        </a>
-
-        <!--
-          <a
-          href="./img/front-end/"
-          data-link="">
-            <img src="./img/front-end/" alt=""
-            data-shop="">
-          </a>
-
-        -->
-
+        <ul class="front-ends-list"></ul>
       </div>
 
     </main>
 
-    <script src="./js/lightgallery.js" charset="utf-8"></script>
-    <script src="./js/app.js" charset="utf-8"></script>
+    <script src="../js/lightgallery.js" charset="utf-8"></script>
+    <script src="../js/front-ends-list.js" charset="utf-8"></script>
+    <script src="../js/app.js" charset="utf-8"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
