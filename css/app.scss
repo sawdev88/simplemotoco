@@ -135,6 +135,14 @@ hr {
   clear: both;
 }
 
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
 .single-tile {
   height: 22rem;
   width: 100%;
@@ -417,7 +425,7 @@ hr {
 .container {
   width: 95%;
   margin: 0 auto;
-  padding: 0 0 8rem;
+  padding: 2rem 0 8rem;
   background: #fff;
   position: relative;
   z-index: 2;
@@ -439,7 +447,7 @@ hr {
   }
 }
 
-#featured-item-container {
+#callout-img-container {
   flex: 1;
   height: 30rem;
   padding: 4rem 1rem;
@@ -466,6 +474,16 @@ hr {
 
   i {
     font-size: 3.5rem;
+  }
+}
+
+#featured-item-container {
+  height: 24rem;
+  text-align: center;
+
+  h4 {
+    padding-top: 1rem;
+    margin: 0;
   }
 }
 
@@ -511,7 +529,7 @@ hr {
 
 #inspiration-container {
   flex: 2;
-  height: 42rem;
+  height: 68rem;
   margin: 1rem 0 0 1rem;
   padding: 2rem;
 
@@ -524,8 +542,12 @@ hr {
     }
   }
 
+  .flex-2 {
+    flex: 2;
+  }
+
   h4 {
-    margin: 0 0 1rem 0;
+    margin-bottom: 4rem;
   }
 }
 
