@@ -74,7 +74,6 @@ hr {
 
 .red-stripe {
   background: rgb(180,32,38);
-  margin-top: 2rem;
 }
 
 .orange-stripe {
@@ -83,7 +82,6 @@ hr {
 
 .yellow-stripe {
   background: rgb(233,196,30);
-  margin-bottom: 2rem;
 }
 
 // ******************************** Globals
@@ -140,6 +138,14 @@ hr {
 .single-tile {
   height: 22rem;
   width: 100%;
+}
+
+.margin-top {
+  margin-top: 2rem;
+}
+
+.margin-bottom {
+  margin-bottom: 2rem;
 }
 
 .margin-left {
@@ -220,6 +226,17 @@ hr {
   }
 }
 
+.return-home {
+  margin-bottom: 1rem;
+  display: inline-block;
+  border-bottom: 2px solid #bbb;
+
+  .fa {
+    color: #777;
+    font-size: 2rem !important;
+  }
+}
+
 // Hamburger
 .fa-bars,
 .fa-close {
@@ -290,7 +307,7 @@ hr {
       #fff,
       transparent 60%
     ), url('../img/street.jpg') no-repeat center center / cover fixed;
-  height: 99vh;
+  height: 55vh;
   width: 100%;
   transition: linear;
 
@@ -362,8 +379,8 @@ hr {
     bottom: 2rem;
     left: 1rem;
     padding: .5rem 2rem;
-    z-index: 2;
     background: #fff;
+    z-index: 1;
 
     h1 {
       position: relative;
@@ -400,7 +417,7 @@ hr {
 .container {
   width: 95%;
   margin: 0 auto;
-  padding: 2rem 0 8rem;
+  padding: 0 0 8rem;
   background: #fff;
   position: relative;
   z-index: 2;

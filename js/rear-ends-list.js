@@ -85,7 +85,7 @@ $(function () {
   var list = shuffle(rearEnds);
 
   $(list).each(function (i, item) {
-    $('.front-ends-list').append(
+    $('.items-list').append(
       '<li data-src="' + item.img + '" class="item" style="background: url(' + item.img + ') no-repeat center center / cover"data-sub-html="<h4>' + item.title + '</h4><h4>' + item.shop + '</h4>">' +
         '<div class="callout">' +
         item.title +
