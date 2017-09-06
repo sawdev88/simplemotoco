@@ -4,7 +4,7 @@ $(function() {
     var position = $(window).scrollTop();
 
     if (position < 360) {
-      $('.landing-banner').css('marginTop', -position);
+      $('.landing-banner').css('marginTop', -position + 'px');
     }
   })
 

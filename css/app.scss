@@ -35,7 +35,8 @@ h3 {
   margin-bottom: 3rem;
 }
 
-h4 {
+h4,
+a.link-title {
   font-size: 2rem;
 }
 
@@ -55,6 +56,30 @@ a {
   cursor: pointer;
   color: #666;
   transition: $ease;
+
+  &.link-title {
+    display: inline-block;
+    color: #333;
+
+    i {
+      font-size: 1rem;
+      vertical-align: middle;
+      opacity: 0;
+      transition: $ease;
+      margin-left: -.5rem;
+      color: #666;
+    }
+
+    &:hover {
+      color: #31698a;
+
+      i {
+        color: #31698a;
+        margin-left: 0;
+        opacity: 1;
+      }
+    }
+  }
 
   &:hover {
     color: #444;
@@ -196,6 +221,14 @@ hr {
   }
 }
 
+.down-arrow {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: #ccc;
+}
+
 .col-1 {
   flex: 1;
   height: 16rem;
@@ -315,17 +348,9 @@ hr {
       #fff,
       transparent 60%
     ), url('../img/street.jpg') no-repeat center center / cover fixed;
-  height: 55vh;
+  height: 92vh;
   width: 100%;
   transition: linear;
-
-  .down-arrow {
-    position: absolute;
-    bottom: 2rem;
-    left: 3rem;
-    font-size: 2rem;
-    color: #ccc;
-  }
 
   a {
     color: #000;
@@ -525,6 +550,10 @@ hr {
   height: 34rem;
   margin: 0 0 1rem 1rem;
   padding: 2rem;
+
+  .tooltip {
+    background-color: #fff !important;
+  }
 }
 
 #inspiration-container {
@@ -542,11 +571,7 @@ hr {
     }
   }
 
-  .flex-2 {
-    flex: 2;
-  }
-
-  h4 {
+  a.link-title {
     margin-bottom: 4rem;
   }
 }
