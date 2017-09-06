@@ -36,7 +36,7 @@ var mirrors = [
   },
   {
     title: 'The Urban Brat',
-    shop: 'Zues Custom',
+    shop: 'Zeus Custom',
     donor: 'Stallions Max 250',
     img: './img/mirrors/max-250.jpg',
     link: 'http://zeuscustom.shop/portfolio/tommy-highfilter-fashion-design-formen-project/',
@@ -50,7 +50,7 @@ var mirrors = [
   },
   {
     title: 'The Zeno Racer',
-    shop: 'Zues Custom',
+    shop: 'Zeus Custom',
     donor: 'Royal Enfield Continental GT 535',
     img: './img/mirrors/zeno.jpg',
     link: 'http://zeuscustom.shop/portfolio/the-zeno-racer/',
