@@ -49,19 +49,13 @@ var international = [
     img: './img/zeus-garage.jpg',
     link: './zeus-custom.html'
   },
-  {
-    shop: 'Test',
-    location: 'E',
-    img: './img/helemt_stripes.jpg',
-    link: ''
-  }
 ]
 
 $(function () {
-  var city = sortByKey(us, 'state');
+  var city = sortByKey(us, 'city');
   var cityState = sortByKey(city, 'city');
   var intl = sortByKey(international, 'location')
 
-  setListItems(cityState);
+  setListItems(city);
   setListItems(intl);
 })

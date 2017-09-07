@@ -26,7 +26,7 @@ var rearEnds = [
   {
     title: 'BMW R100 \'Vault\'',
     shop: 'KEVILS SPEED SHOP',
-    img: './img/rear-end/Kevils-‘Vault’-BMW-R100-Café-Racer-Rear.jpg',
+    img: './img/rear-end/vault.jpg',
     link: 'http://thebikeshed.cc/2013/12/23/kevils-r100-vault/',
   },
   {
