@@ -87,5 +87,5 @@ var lights = [
 
 
 $(function () {
-  setThumbails(shuffle(lights))
+  setListItems(shuffle(lights))
 })

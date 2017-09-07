@@ -86,5 +86,5 @@ var misc = [
 ]
 
 $(function () {
-  setThumbails(shuffle(misc));
+  setListItems(shuffle(misc));
 })

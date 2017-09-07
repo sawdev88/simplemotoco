@@ -86,5 +86,5 @@ var exhausts = [
 ]
 
 $(function () {
-  setThumbails(shuffle(exhausts));
+  setListItems(shuffle(exhausts));
 })

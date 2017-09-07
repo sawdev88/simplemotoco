@@ -146,5 +146,5 @@ var cockpits = [
 ]
 
 $(function () {
-  setThumbails(shuffle(cockpits));
+  setListItems(shuffle(cockpits));
 })

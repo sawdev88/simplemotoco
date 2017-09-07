@@ -86,5 +86,5 @@ var mirrors = [
 ]
 
 $(function () {
-  setThumbails(shuffle(mirrors))
+  setListItems(shuffle(mirrors))
 })

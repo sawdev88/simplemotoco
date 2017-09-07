@@ -63,5 +63,5 @@ var rearEnds = [
 
 
 $(function () {
-  setThumbails(shuffle(rearEnds));
+  setListItems(shuffle(rearEnds));
 })

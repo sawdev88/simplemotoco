@@ -62,5 +62,5 @@ var batts = [
 ]
 
 $(function () {
-  setThumbails(shuffle(batts));
+  setListItems(shuffle(batts));
 })

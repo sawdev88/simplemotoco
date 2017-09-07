@@ -98,5 +98,5 @@ var frontEnds = [
 ]
 
 $(function () {
-  setThumbails(shuffle(frontEnds));
+  setListItems(shuffle(frontEnds));
 })

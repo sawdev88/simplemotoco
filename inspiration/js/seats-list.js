@@ -86,5 +86,5 @@ var seats = [
 ]
 
 $(function () {
-  setThumbails(shuffle(seats));
+  setListItems(shuffle(seats));
 })
