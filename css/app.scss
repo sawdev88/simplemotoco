@@ -813,6 +813,46 @@ hr {
 }
 
 
+// ******************************** garage
+.garage-title {
+  background: url('../img/garage-bg.jpg') no-repeat center center / cover;
+  height: 16rem;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  color: #fff;
+  letter-spacing: .2rem;
+}
+
+.garage-callout {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 2rem;
+
+  .image {
+    height: 32rem;
+  }
+
+  .callout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 32rem;
+
+    a {
+      align-items: center;
+      display: flex;
+      flex: 1;
+    }
+
+    .fa {
+      width: 3rem;
+      font-size: 2rem;
+    }
+  }
+}
+
+
 @media (max-width: 600px) {
   h1 {
     font-size: 6rem;
