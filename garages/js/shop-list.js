@@ -1,10 +1,10 @@
 var us = [
   {
-    shop: 'Test',
-    city: 'San Diego',
+    shop: 'Kott Motorcycles',
+    city: 'Santa Clarita',
     state: 'ca',
-    img: './img/helemt_stripes.jpg',
-    link: './bolierplater.html'
+    img: './img/kott-garage.jpg',
+    link: './kott-motorcycles.html'
   },
   {
     shop: 'Test',
@@ -38,16 +38,16 @@ var us = [
 
 var international = [
   {
-    shop: 'Test',
-    location: 'C',
-    img: './img/helemt_stripes.jpg',
-    link: './bolierplater.html'
+    shop: 'Hookie Co.',
+    location: 'Dresden, Germany',
+    img: './img/hookie-garage.jpeg',
+    link: './hookie-co.html'
   },
   {
-    shop: 'Test',
-    location: 'A',
-    img: './img/helemt_stripes.jpg',
-    link: ''
+    shop: 'Zeus Custom',
+    location: 'Bangkok, Thailand',
+    img: './img/zeus-garage.jpg',
+    link: './zeus-custom.html'
   },
   {
     shop: 'Test',

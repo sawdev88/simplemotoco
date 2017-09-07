@@ -304,6 +304,11 @@ ul {
   .fa {
     color: #777;
     font-size: 2rem !important;
+    transition: $ease;
+
+    &:hover {
+      color: #832133;
+    }
   }
 }
 
@@ -672,7 +677,7 @@ ul {
 
     &:hover {
       .move {
-        bottom: 25%;
+        bottom: 2rem;
       }
     }
   }
@@ -885,6 +890,10 @@ ul {
     width: 30%;
     margin: 1.5rem;
     position: relative;
+    background-color: #ddd !important;
+    background-blend-mode: multiply;
+    box-shadow: $shadow;
+    transition: $ease;
 
     .callout {
       background: #000;
@@ -895,6 +904,7 @@ ul {
       bottom: 1rem;
       left: 2rem;
       right: 2rem;
+      transition: $ease;
 
       h4 {
         margin: 0;
@@ -904,25 +914,19 @@ ul {
         text-transform: uppercase;
       }
     }
+
+    &:hover {
+      background-blend-mode: normal;
+      box-shadow: 4px 4px 4px #aaa;
+
+      .callout {
+        bottom: 2rem;
+      }
+    }
   }
 
   h5 {
     padding-bottom: 2rem;
-  }
-}
-
-.garage-title {
-  background: url('../img/garage-bg.jpg') no-repeat center center / cover;
-  height: 16rem;
-  display: flex;
-  align-items: center;
-  padding-left: 2rem;
-  color: #fff;
-  letter-spacing: .2rem;
-
-  h2 {
-    padding: .5rem;
-    background: #000;
   }
 }
 
@@ -933,6 +937,10 @@ ul {
 
   .image {
     height: 32rem;
+
+    img {
+      opacity: 0;
+    }
   }
 
   .callout {
@@ -945,11 +953,21 @@ ul {
       align-items: center;
       display: flex;
       flex: 1;
+
+      &:hover {
+        color: #832133;
+      }
     }
 
     .fa {
       width: 3rem;
       font-size: 2rem;
+    }
+
+    h3 {
+      margin: 0 0 2rem;
+      padding: 1rem;
+      border-bottom: .1rem solid #aaa;
     }
   }
 }
