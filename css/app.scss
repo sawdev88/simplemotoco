@@ -39,6 +39,7 @@ h3 {
 h4,
 a.link-title {
   font-size: 2rem;
+  margin: 1rem 0;
 }
 
 h5 {
@@ -455,6 +456,13 @@ hr {
   }
 }
 
+.lg-sub-html {
+  h4 {
+    font-size: 1.75rem;
+    margin: 0;
+  }
+}
+
 // ************************************ Containers
 .container {
   width: 95%;
@@ -528,6 +536,7 @@ hr {
   padding: 2rem;
 
   .tooltip {
+    height: 20rem;
     transition: $ease;
 
     &:hover {
@@ -581,6 +590,25 @@ hr {
 
   .build-callout {
     background: #fff;
+    position: absolute;
+    left: 2rem;
+    right: 2rem;
+    top: 7rem;
+    bottom: 3rem;
+    background: #000;
+    vertical-align: bottom;
+    color: #fff;
+    box-shadow: $shadow;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    h5 {
+      margin-top: .25rem;
+      font-size: 1.5rem;
+    }
   }
 
   .callout {
@@ -602,17 +630,37 @@ hr {
     p {
       margin: 0;
     }
+
+    &:hover {
+      .move {
+        bottom: 25%;
+      }
+    }
   }
 
   .shop-callout {
     color: #fff;
     background: #000;
     padding: .5rem 0;
-    margin-top: 4rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    transition: $ease;
+  }
+
+  .middle {
+    bottom: 50%;
+    transform: translateY(50%);
+    position: absolute;
   }
 
   h4 {
     margin: 1rem;
+  }
+
+  h5 {
+    text-transform: uppercase;
   }
 }
 
@@ -743,6 +791,10 @@ hr {
       color:  #fff;
       background: #000;
       transition: $ease;
+    }
+
+    img {
+      opacity: 0;
     }
 
     span {

@@ -20,7 +20,8 @@ function shuffle(array) {
 function setThumbails(ele) {
   $(ele).each(function (i, item) {
     $('.items-list').append(
-      '<li data-src="' + item.img + '" class="item" style="background: url(' + item.img + ') no-repeat center center / cover"data-sub-html="<h4>' + item.title + '</h4><h4>' + item.shop + '</h4>">' +
+      '<li data-src="' + item.img + '" data-link="' + item.link + '" class="item" style="background: url(' + item.img + ') no-repeat center center / cover"data-sub-html="<h4>' + item.title + '</h4><span>' + item.shop + '</span>">' +
+        '<img src="#" alt="' + item.shop + ' ' + item.title + ' ' + item.donor + '">' +
         '<div class="callout">' +
         item.title +
         '<span>' + item.shop + '</span>' +

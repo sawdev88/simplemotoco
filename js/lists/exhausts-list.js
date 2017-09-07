@@ -23,14 +23,14 @@ var exhausts = [
   {
     title: 'Falcon 550',
     shop: 'Kott Motorcycles',
-    donor: 'CB550',
+    donor: 'Honda CB550',
     img: './img/exhausts/kott-cb750.jpg',
     link: 'http://www.kottmotorcycles.com/builds/2015/7/10/-baby-blue-cb750',
   },
   {
     title: 'Naked Speed 750',
     shop: 'Kott Motorcycles',
-    donor: 'CB750',
+    donor: 'Honda CB750',
     img: './img/exhausts/kott-naked-speed.jpg',
     link: 'http://www.kottmotorcycles.com/builds/2015/4/17/naked-speed-750',
   },
@@ -58,7 +58,7 @@ var exhausts = [
   {
     title: 'The Blue Raven',
     shop: 'Blitz Motorcycles',
-    donor: 'W650',
+    donor: 'Kawasaki W650',
     img: './img/exhausts/blitz-w650.jpg',
     link: 'http://www.blitz-motorcycles.com/bikes/the-blue-raven',
   },
@@ -70,14 +70,14 @@ var exhausts = [
     link: 'https://purposebuiltmoto.com/cafe-racer-scrambler-muffler/',
   },
   {
-    title: 'GL1000 "dirty"',
+    title: 'GL1000 \'dirty\'',
     shop: 'Seaweed and Gravel',
     donor: 'Suzuki GL1000',
     img: './img/exhausts/sg-gl.jpg',
     link: 'https://seaweedandgravel.com/pages/custommotos',
   },
   {
-    title: 'CB750 "Babe Blue"',
+    title: 'CB750 \'Babe Blue\'',
     shop: 'Seaweed and Gravel',
     donor: 'Honda CB750',
     img: './img/exhausts/sg-babe-blue.jpg',
