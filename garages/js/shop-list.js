@@ -7,32 +7,32 @@ var us = [
     link: './kott-motorcycles.html'
   },
   {
-    shop: 'Test',
-    city: 'LA',
+    shop: 'Seaweed and Gravel',
+    city: 'Encinitas',
     state: 'CA',
-    img: './img/helemt_stripes.jpg',
-    link: ''
+    img: './img/sg-garage.jpg',
+    link: './seaweed-and-gravel.html'
   },
   {
-    shop: 'Test',
-    city: 'San Diego',
+    shop: 'Hazan Motorworks',
+    city: 'Los Angeles',
     state: 'CA',
-    img: './img/helemt_stripes.jpg',
-    link: ''
+    img: './img/hazan-garage.jpg',
+    link: './hazan-motorworks.html'
   },
   {
-    shop: 'Test',
-    city: 'San Diego',
-    state: 'ca',
-    img: './img/helemt_stripes.jpg',
-    link: './bolierplater.html'
+    shop: 'Garage Company',
+    city: 'Inglewood',
+    state: 'CA',
+    img: './img/garage-company-garage.jpg',
+    link: './garage-company.html'
   },
   {
-    shop: 'Test',
-    city: 'LA',
-    state: 'CA',
-    img: './img/helemt_stripes.jpg',
-    link: ''
+    shop: 'Classified Moto',
+    city: 'Richmond',
+    state: 'VA',
+    img: './img/classified-moto-garage.jpg',
+    link: './classified-moto.html'
   },
 ]
 
