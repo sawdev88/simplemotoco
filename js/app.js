@@ -1,5 +1,17 @@
 $(function() {
 
+  // Smooth Scroll
+  $('a[href*=\\#]').on('click', function(event){
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+  });
+
+  // Scroll to top
+  $('.arrow-up').on('click', function() {
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
+    return false;
+  });
+
   $(window).on('scroll', function () {
     var position = $(window).scrollTop();
 

@@ -19,6 +19,7 @@ body {
 
 $ease: .3s ease-in-out;
 $shadow: 2px 2px 2px #aaa;
+$blue: #31698a;
 
 h1 {
   font-size: 8rem;
@@ -72,10 +73,10 @@ a {
     }
 
     &:hover {
-      color: #31698a;
+      color: $blue;
 
       i {
-        color: #31698a;
+        color: $blue;
         margin-left: 0;
         opacity: 1;
       }
@@ -169,11 +170,11 @@ ul {
 }
 
 .small-left-padding {
-  padding: 0 0 1rem 1rem;
+  padding: 1rem 0 1rem 1rem;
 }
 
 .bg {
-  background: #efefef;
+  background: #d6d7dd;
 }
 
 .dark-bg {
@@ -345,6 +346,8 @@ ul {
   border-radius: 5px;
   padding: .4rem .5rem;
   font-size: 1.5rem !important;
+  text-shadow: 0 0 1px #fff;
+  box-shadow: 0 0 1px #fff;
 
   &:hover {
     cursor: pointer;
@@ -418,14 +421,10 @@ ul {
 
 // Landing Banner
 .landing-banner {
-  background: radial-gradient(
-      circle at bottom right,
-      #fff,
-      transparent 60%
-    ), url('../img/street.jpg') no-repeat center center / cover fixed;
-  height: 92vh;
+  background: url('../img/jake-blucker.jpg') no-repeat center center / cover fixed;
+  height: 72vh;
   width: 100%;
-  transition: linear;
+  position: relative;
 
   a {
     color: #000;
@@ -446,25 +445,51 @@ ul {
 
   .landing-container {
     position: absolute;
-    left: 12rem;
-    top: 6rem;
+    left: 6vw;
+    top: 6vh;
 
-    h2,
-    span {
-      display: inline-block;
-      margin-top: -1rem;
+    .fa {
+      border: 1px solid #fff;
+      margin-top: .5rem;
+      width: 2.75rem;
+      height: 2.75rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 25px;
+      transition: $ease;
+
+      &:hover {
+        cursor: pointer;
+        color: $blue;
+        border-color: $blue;
+        transform: scale(1.1);
+      }
+    }
+
+    h1, h2, .fa { color: #fff; opacity: .9; }
+
+    h1 {
+      font-size: 2.5rem;
+      text-shadow: 1px 1px 1px #666;
     }
 
     h2 {
-      padding-left: 16rem;
+      font-size: 1.8rem;
+      font-weight: 100;
     }
 
-    span {
-      font-size: 2rem;
-      padding-left: 1rem;
-      letter-spacing: .1rem;
-      font-weight: 600;
+    a {
+      font-size: 1rem;
     }
+  }
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-height: 40vh;
   }
 }
 
@@ -836,6 +861,18 @@ ul {
   .fa {
     font-size: 2rem;
     margin: 0 .5rem .5rem;
+
+    &:hover {
+      cursor: pointer;
+      color: $blue;
+    }
+  }
+
+  .arrow-up {
+    color: #666 !important;
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
   }
 }
 
@@ -916,7 +953,7 @@ ul {
   }
 
   ul {
-    margin-left: -1.5rem;
+    padding: 0;
   }
 
   li {
