@@ -21,7 +21,7 @@ function setListItems(ele) {
   $(ele).each(function (i, item) {
     $('.items-list').append(
       '<li data-src="' + item.img + '" data-link="' + item.link + '" class="item" style="background: url(' + item.img + ') no-repeat center center / cover"data-sub-html="<h4>' + item.title + '</h4><span>' + item.shop + '</span>">' +
-        '<img src="#" alt="' + item.shop + ' ' + item.title + ' ' + item.donor + '">' +
+        '<img src="' + item.img + '" alt="' + item.shop + ' ' + item.title + ' ' + item.donor + '">' +
         '<div class="callout">' +
         item.title +
         '<span>' + item.shop + '</span>' +

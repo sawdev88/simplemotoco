@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <title>Simple Moto Co. | Handbuilt Culture | Resources - Videos</title>
     <link rel="icon" href="../img/helmet.png">
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="../css/app.min.css">
     <script src="https://use.fontawesome.com/09efc92c6d.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </head>
-  <body class="dark-bg">
 
-    <header>
+  <body>
+    <header class="page-header short" style="background: url('./img/video-bg.jpg') no-repeat center 180% / cover fixed">
       <i class="fa fa-bars"></i>
       <nav class="main-nav">
         <ul>
@@ -29,21 +29,16 @@
           <div class="stripe yellow-stripe"></div>
         </div>
       </nav>
+      <img src="../img/brella.png" class="logo" alt="smco simple moto co logo">
+
+      <h1>Videos</h1>
     </header>
 
-    <main class="containe dark-bgr" id="resources">
-      <div class="section-header">
-        <div class="header-container dark-bg">
-          <a href="./index.html"><small>Resources /</small></a>
-          <h1>Videos</h1>
-        </div>
-
-        <div class="stripes-container">
-          <div class="stripe red-stripe margin-top"></div>
-          <div class="stripe orange-stripe"></div>
-          <div class="stripe yellow-stripe margin-bottom"></div>
-        </div>
-      </div>
+    <main class="container" id="garage">
+      <a class="large-left-padding" href="./index.html"><i class="fa fa-arrow-left"></i> Resource Categories</a>
+      <section>
+        <ul class="items-list"></ul>
+      </section>
     </main>
 
     <footer id="footer">
@@ -56,6 +51,8 @@
       <small>simple moto co</small>
       <br>
       <small>&copy; 2017</small>
+      <script src="./js/helper.js" charset="utf-8"></script>
+      <script src="./js/video-list.js" charset="utf-8"></script>
       <script src="../js/app.js" charset="utf-8"></script>
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

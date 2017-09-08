@@ -71,6 +71,62 @@ var books = [
     img: './img/books/cafe-racer.jpg',
     link: 'http://amzn.to/2jajHrW'
   },
+  {
+    title: 'The Art of the Racing Motorcycle: 100 Years of Designing for Speed',
+    author: 'Phillip Tooth',
+    img: './img/books/art-racing.jpg',
+    link: 'http://amzn.to/2gQ47Ru'
+  },
+  {
+    title: 'The Ride: New Custom Motorcycles and their Builders',
+    author: 'Chris Hunter',
+    img: './img/books/the-ride.png',
+    link: 'http://amzn.to/2xUjix6'
+  },
+  {
+    title: 'The Ride 2nd Gear: New Custom Motorcyclesand Their Builders. Gentlemen Edition',
+    author: 'Robert Klanten',
+    img: './img/books/the-ride-g.jpg',
+    link: 'http://amzn.to/2gPcfOm'
+  },
+  {
+    title: 'The Ride 2nd Gear: New Custom Motorcycles and Their Builders. Rebel Edition',
+    author: 'Robert Klanten',
+    img: './img/books/the-ride-r.jpg',
+    link: 'http://amzn.to/2j9oUQF'
+  },
+  {
+    title: 'Cafe Racer: How to Build Your Own Basic Cafe Racer With Timeless Style',
+    author: 'Devin Blast',
+    img: './img/books/cafe-racer-devin.jpg',
+    link: 'http://amzn.to/2wNZeOo'
+  },
+  {
+    title: 'McQueen\'s Motorcycles: Racing and Riding with the King of Cool',
+    author: 'Matt Stone',
+    img: './img/books/king-of-cool.jpg',
+    link: 'http://amzn.to/2xiDHia'
+  },
+  {
+    title: 'Proficient Motorcycling: The Ultimate Guide to Riding Well',
+    author: 'David L. Hough',
+    img: './img/books/ultimate-riding.jpg',
+    link: 'http://amzn.to/2eSVHbs'
+  },
+  {
+    title: 'Total Control: High Performance Street Riding Techniques, 2nd Edition',
+    author: 'Lee Parks',
+    img: './img/books/total-control.jpg',
+    link: 'http://amzn.to/2weSm96'
+  },
+  {
+    title: 'Motorcycle Engineering',
+    author: 'P.E. Irving',
+    img: './img/books/moto-eng.jpg',
+    link: 'http://amzn.to/2jbzJBK'
+  },
 ]
 
-setListItems(books.sort());
+$(function () {
+  setListItems(shuffle(books));
+})
