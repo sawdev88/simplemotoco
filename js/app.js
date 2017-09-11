@@ -1,5 +1,9 @@
 $(function() {
 
+  setTimeout(function () {
+    $('.pop-up').css('bottom', 0);
+  }, 3000);
+
   // Smooth Scroll
   $('a[href*=\\#]').on('click', function(event){
     event.preventDefault();

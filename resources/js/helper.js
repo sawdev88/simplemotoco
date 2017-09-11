@@ -15,6 +15,19 @@ function setListItems(ele) {
   });
 }
 
+function setRoundListItems(ele) {
+  $(ele).each(function (i, item) {
+    $('.items-list').append(
+      '<li class="item round" style="background: url(' + item.img + ') no-repeat center center / cover; background-color: #fff !important; box-shadow: none; margin-bottom: 3rem;">' +
+        '<div class="callout">' +
+          '<h4>' + item.title + '</h4>' +
+        '</div>' +
+        '<a class="cover" href="' + item.link + '" target="_blank"></a>' +
+      '</li>'
+    );
+  });
+}
+
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
 
