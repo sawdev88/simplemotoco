@@ -95,6 +95,83 @@ var frontEnds = [
     img: './img/front-end/cb750sg.jpg',
     link: 'https://seaweedandgravel.com/pages/custommotos',
   },
+  {
+    title: '1984 Ducati mhr900',
+    shop: 'Revival Cycles',
+    img: './img/front-end/1984-ducati-mhr900.jpg',
+    link: 'https://revivalcycles.com/pages/1984-ducati-mhr900',
+  },
+  {
+    title: 'Revival Zero',
+    shop: 'Revival Cycles',
+    img: './img/front-end/revival-zero.jpeg',
+    link: 'https://revivalcycles.com/pages/revival-zero',
+  },
+  {
+    title: '1976 Honda CB550',
+    shop: 'Lossa Engineering',
+    img: './img/front-end/lossa-1976-honda-cb550.jpeg',
+    link: 'https://www.lossaengineering.com/blogs/bikes/61964803-1976-honda-cb550',
+  },
+  {
+    title: '1977 Honda CB750',
+    shop: 'Lossa Engineering',
+    img: './img/front-end/lossa-1977-honda-cb750.jpg',
+    link: 'https://www.lossaengineering.com/blogs/bikes/16887943-1977-honda-cb750',
+  },
+  {
+    title: '1992 Honda CB250 Nighthawk',
+    shop: 'Classified Moto',
+    img: './img/front-end/classified-CB250-front.jpg',
+    link: 'https://www.classifiedmoto.com/motorcycles/cb250-pentagon-cafe/',
+  },
+  {
+    title: 'KATEE’S KT600',
+    shop: 'Classified Moto',
+    img: './img/front-end/classified-KT600-front.jpg',
+    link: 'https://www.classifiedmoto.com/motorcycles/katees-kt600/',
+  },
+  {
+    title: 'The Brooklyn Project',
+    shop: 'Zeus Custom',
+    donor: 'Stallions Centaur 150',
+    img: './img/front-end/zeus-the-brooklyn.jpg',
+    link: 'http://zeuscustom.shop/portfolio/catherlin-rusakovic-fashion-model/',
+  },
+  {
+    title: 'Rebel Racer Limited Custom',
+    shop: 'Zeus Custom',
+    img: './img/front-end/zeus-rebel.jpg',
+    link: 'http://zeuscustom.shop/portfolio/ibags-messenger-leather-bagsfor-men/',
+  },
+  {
+    title: 'The Pharell Project',
+    shop: 'Zeus Custom',
+    donor: 'Yamaha SR 400',
+    img: './img/front-end/zeus-pharell.jpg',
+    link: 'http://zeuscustom.shop/portfolio/gentlemen-fashion-sets/',
+  },
+  {
+    title: 'The Urban Brat',
+    shop: 'Zeus Custom',
+    donor: 'Stallions Max 250',
+    img: './img/front-end/zeus-brat.jpg',
+    link: 'http://zeuscustom.shop/portfolio/tommy-highfilter-fashion-design-formen-project/',
+  },
+  {
+    title: 'The Flat Track',
+    shop: 'Zeus Custom',
+    donor: 'GPX Legend 200',
+    img: './img/front-end/zeus-flat-track.jpg',
+    link: 'http://zeuscustom.shop/portfolio/the-flat-track/',
+  },
+  {
+    title: 'The Zeno Racer',
+    shop: 'Zeus Custom',
+    donor: 'Royal Enfield Continental GT 535',
+    img: './img/front-end/zeus-zeno.jpg',
+    link: 'http://zeuscustom.shop/portfolio/the-zeno-racer/',
+  },
 ]
 
 $(function () {

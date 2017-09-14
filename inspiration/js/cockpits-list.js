@@ -143,6 +143,48 @@ var cockpits = [
     img: './img/cockpit/black-mamba-top.jpg',
     link: 'http://hookie.co/portfolio/black-mamba-honda-cb550/',
   },
+  {
+    title: 'The Urban Brat',
+    shop: 'Zeus Custom',
+    donor: 'Stallions Max 250',
+    img: './img/cockpit/zeus-brat.jpg',
+    link: 'http://zeuscustom.shop/portfolio/tommy-highfilter-fashion-design-formen-project/',
+  },
+  {
+    title: 'The Reticent',
+    shop: 'Zeus Custom',
+    donor: 'Stallions Max 250',
+    img: './img/cockpit/zeus-reticent.jpg',
+    link: 'http://zeuscustom.shop/portfolio/alexandra-stan-in-luxury-leather-stylefor-zara-fashion-brand/',
+  },
+  {
+    title: 'Rebel Racer Limited Custom',
+    shop: 'Zeus Custom',
+    donor: 'Honda Rebel 300',
+    img: './img/cockpit/zeus-rebel.jpg',
+    link: 'http://zeuscustom.shop/portfolio/ibags-messenger-leather-bagsfor-men/',
+  },
+  {
+    title: 'Pharell Racer',
+    shop: 'Zeus Custom',
+    donor: 'Yamaha SR 400',
+    img: './img/cockpit/zeus-pharrel.jpg',
+    link: 'http://zeuscustom.shop/portfolio/gentlemen-fashion-sets/',
+  },
+  {
+    title: 'The Flat-Track',
+    shop: 'Zeus Custom',
+    donor: 'GPX Legend 200',
+    img: './img/cockpit/zeus-flat-track.jpg',
+    link: 'http://zeuscustom.shop/portfolio/the-flat-track/',
+  },
+  {
+    title: 'Zodiac Star',
+    shop: 'Zeus Custom',
+    donor: 'GPX Legend 200',
+    img: './img/cockpit/zeus-zodiac.jpg',
+    link: 'http://zeuscustom.shop/portfolio/zodiac-star/',
+  },
 ]
 
 $(function () {

@@ -64,6 +64,16 @@ var channels = [
     img: './img/youtube/the-cafe-racer.jpg',
     link: 'https://www.youtube.com/user/TheCafeRacerUK',
   },
+  {
+    title: 'Ichiban Moto',
+    img: './img/youtube/ichiban-moto.jpg',
+    link: 'https://www.youtube.com/channel/UC28gtkJP-bK77M5Qyc3Dn7g',
+  },
+  {
+    title: 'Analog Motorcycles',
+    img: './img/youtube/analog.jpg',
+    link: 'https://www.youtube.com/user/analogmotorcycles',
+  },
 ]
 
 $(function () {

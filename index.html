@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Simple Moto Co. | Handbuilt Culture</title>
     <link rel="icon" href="img/helmet.png">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto+Condensed" rel="stylesheet">
@@ -16,7 +17,7 @@
       <nav class="main-nav">
         <ul>
           <li><a class="selected" href="./index.html">Home</a></li>
-          <li><a href="#">Online Store</a></li>
+          <li><a href="http://simplemotoco.storenvy.com/" target="_blank">Online Store</a></li>
           <li><a href="./inspiration/index.html">Inspiration</a></li>
           <li><a href="./garages/index.html">Garage Directory</a></li>
           <li><a href="./resources/index.html">Resources</a></li>
@@ -33,25 +34,26 @@
 
     <section class="landing-banner">
       <div class="landing-container scroll-effect">
-        <h1>simple moto co.</h1>
-        <h2>handbuilt culture</h2>
-        <a href="#content"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+        <h1>Simple moto co | smco</h1>
+        <a href="#content"><i class="fa fa-arrow-down hide" aria-hidden="true"></i></a>
       </div>
-      <img src="./img/brella.png" alt="smco simple moto co logo">
+      <div class="logo-container flex-center">
+        <img class="logo" src="./img/almost_white.png" alt="smco simple moto co logo">
+      </div>
     </section>
 
     <main class="container" id="content">
-      <h5 class="small-left-padding margin-bottom">design the life you love.</h5>
+      <h5 class="small-left-padding margin-bottom hide">design the life you love.</h5>
 
       <div class="table-row">
-        <section id="about-container" class="bg">
+        <section id="about-container" class="bg fade-in">
           <h3>About</h3>
           <p>
             Simple Moto Co is a passion project created to bring builders together - Through common interests and passion we can build, inspire and motivate. Simple Moto Co is still in it's early stages and while primarily motivated by cafe racers, scramblers, bobbers, brats and other custom motorcycles it's overall influence is anything handmade with pride and busted knuckles.
           </p>
         </section>
 
-        <section id="callout-img-container" class="bg">
+        <section id="callout-img-container" class="bg fade-in hide">
           <div class="single-tile bg" style="background: url('./img/helmet_stripes.png') no-repeat center center / contain"></div>
         </section>
         <div class="clear"></div>
@@ -60,7 +62,7 @@
       <hr>
 
       <div class="table-column">
-        <div class="flex-1">
+        <div class="flex-1 hide">
           <section id="gallery-slider">
             <i class="fa fa-umbrella" aria-hidden="true"></i>
             <h2>S</h2>
@@ -68,27 +70,30 @@
             <h2>C</h2>
             <h2>O</h2>
           </section>
-          <section id="featured-item-container" class="bg margin-right margin-top">
-            <h4>Sale Item</h4>
+          <section id="featured-item-container" class="bg margin-right margin-top fade-in">
+            <div class="callout">
+              <h4>Sale Item</h4>
+              <span>$9.99 + free shipping</span>
+            </div>
           </section>
         </div>
 
         <div class="col-2">
-          <section id="featured-merch" class="bg">
+          <section id="featured-merch" class="bg fade-in">
             <h4>Featured Merch</h4>
 
             <div class="table-row">
-              <div class="tooltip" style="background: url('./img/long-live-the-kings.jpg') no-repeat top center / contain">
+              <div class="tooltip" style="background: url('./img/simple-t.jpg') no-repeat top center / contain">
                 <div class="callout">
-                  <span>Long Live The Kings Long Sleeve</span>
-                  <span>$29.99</span>
+                  <span>Simple T</span>
+                  <span>$19.99</span>
                 </div>
-                <a class="cover" href="http://simplemotoco.storenvy.com/products/21479507-long-live-the-kings-long-sleeve-dark-t" target="_blank"></a>
+                <a class="cover" href="http://simplemotoco.storenvy.com/products/21505382-simple-t" target="_blank"></a>
               </div>
               <div class="tooltip" style="background: url('./img/helmet-hair.jpg') no-repeat top center / contain">
                 <div class="callout">
                   <span>Helmet Hair Hat</span>
-                  <span>$24.99</span>
+                  <span>$19.99</span>
                 </div>
                 <a class="cover" href="http://simplemotoco.storenvy.com/products/21479792-helmet-hair" target="_blank"></a>
               </div>
@@ -108,7 +113,7 @@
 
           <hr>
 
-          <section id="inspiration-container" class="bg">
+          <section id="inspiration-container" class="bg fade-in">
             <a class="link-title" href="./inspiration/index.html">Inspiration <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
             <div class="table-row">
               <div class="col-1 blend" style="background: url('./inspiration/img/front-end/scrambler-3.jpg') no-repeat center center / cover">
@@ -117,14 +122,14 @@
               <div class="col-1 blend" style="background: url('./inspiration/img/rear-end/CRD-27-Rear-MS-800.jpg') no-repeat center center / cover">
                 <a class="cover" href="./inspiration/rear-ends.html"><span>Rear Ends</span></a>
               </div>
-              <div class="col-1 blend" style="background: url('./inspiration/img/cockpit/Fuel-R65Racer.jpg') no-repeat center center / cover">
-                <a class="cover" href="./inspiration/cockpits-guages.html"><span>CockPits/Guages</span></a>
+              <div class="col-1 blend" style="background: url('./inspiration/img/sides/HondaCB750-035.jpg') no-repeat 15% center / cover">
+                <a class="cover" href="./inspiration/side-views.html"><span>Side Views</span></a>
               </div>
             </div>
 
             <div class="table-row">
-              <div class="col-1 tall blend" style="background: url('./inspiration/img/batt/HondaCB750-035.jpg') no-repeat 15% center / cover">
-                <a class="cover" href="./inspiration/battery-electronics.html"><span>Battery / Electroics</span></a>
+              <div class="col-1 blend tall" style="background: url('./inspiration/img/cockpit/Fuel-R65Racer.jpg') no-repeat center center / cover">
+                <a class="cover" href="./inspiration/cockpits-guages.html"><span>CockPits</span></a>
               </div>
               <div class="col-1 tall blend" style="background: url('./inspiration/img/lights/mg.jpg') no-repeat 60% center / cover">
                 <a class="cover" href="./inspiration/lights.html"><span>Lights</span></a>
@@ -153,7 +158,7 @@
 
       <section id="builders-container">
         <div class="table-row">
-          <div class="col-1 bg match-height margin-right section-padding">
+          <div class="col-1 bg match-height margin-right section-padding fade-in">
             <h4>Featured Build</h4>
             <div class="build-callout">
               <img src="./img/hookie-co-royt.jpg" alt="Hookie Co ROYT">
@@ -164,7 +169,7 @@
               <a class="cover" href="http://hookie.co/" target="_blank"></a>
             </div>
           </div>
-          <div class="col-1 margin-left match-height section-padding bg">
+          <div class="col-1 margin-left match-height section-padding bg fade-in">
             <h4>Featured Garages</h4>
             <div class="table-row">
               <div class="callout blend" style="background: url('./img/hookie-garage.jpeg') no-repeat center center / cover">
@@ -209,39 +214,41 @@
       </div>
 
       <div class="table-column">
-        <section id="garage-container" class="bg margin-right section-padding">
+        <section id="garage-container" class="bg margin-right section-padding fade-in hide">
           <div class="garage-title">
             The Garage
           </div>
           <div class="garage-items">
             <div class="callout">
-              <h3 class="white">Honda</h3>
+              <h3>Electrical</h3>
               <a href="#"></a>
             </div>
             <div class="callout">
-              <h3>Yamaha</h3>
+              <h3>Carbs</h3>
               <a href="#"></a>
             </div>
             <div class="callout">
-              <h3>Suzuki</h3>
+              <h3>Engine</h3>
               <a href="#"></a>
             </div>
             <div class="callout">
-              <h3>Kawasaki</h3>
+              <h3>Paint</h3>
               <a href="#"></a>
             </div>
             <div class="callout">
-              <h3>BMW</h3>
+              <h3>Body</h3>
               <a href="#"></a>
             </div>
             <div class="callout">
-              <h3>Triumph</h3>
+              <h3>Fourms</h3>
               <a href="#"></a>
             </div>
+
+            <img src="./img/almost.png" alt="simple moto co logo, smco">
           </div>
         </section>
 
-        <section id="resources-container" class="section-padding bg table-row margin-left">
+        <section id="resources-container" class="section-padding bg table-row margin-left fade-in">
           <a class="link-title" href="./resources/index.html">Resources <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
             <div class="callout blend" style="background: url('./img/book-bg.jpg') no-repeat center center / cover">
               <span>books</span>
@@ -273,9 +280,9 @@
         <i class="fa fa-motorcycle" aria-hidden="true"></i>
       </section>
 
-      <div class="stripe red-stripe"></div>
-      <div class="stripe orange-stripe"></div>
-      <div class="stripe yellow-stripe"></div>
+      <div class="stripe red-stripe full-width"></div>
+      <div class="stripe orange-stripe full-width"></div>
+      <div class="stripe yellow-stripe full-width"></div>
     </main>
 
     <footer id="footer">

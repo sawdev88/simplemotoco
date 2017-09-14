@@ -83,6 +83,18 @@ var lights = [
     img: './img/lights/af-type14.jpg',
     link: 'http://www.autofabrica.com/#/type-14/',
   },
+  {
+    title: 'Rebel Racer Limited Custom',
+    shop: 'Zeus Custom',
+    img: './img/lights/zeus-rebel.jpg',
+    link: 'http://zeuscustom.shop/portfolio/ibags-messenger-leather-bagsfor-men/',
+  },
+  {
+    title: 'Zodiac Star',
+    shop: 'Zeus Custom',
+    img: './img/lights/zeus-zodiac.jpg',
+    link: 'http://zeuscustom.shop/portfolio/zodiac-star/',
+  },
 ]
 
 

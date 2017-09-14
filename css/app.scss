@@ -20,6 +20,7 @@ body {
 $ease: .3s ease-in-out;
 $shadow: 2px 2px 2px #aaa;
 $blue: #31698a;
+$animate: 1s ease-in-out;
 
 h1 {
   font-size: 8rem;
@@ -117,6 +118,24 @@ ul {
   background: rgb(233,196,30);
 }
 
+.fade-in {
+  opacity: 0;
+  transition: $animate;
+
+  &.in-view {
+    opacity: 1;
+  }
+}
+
+.full-width {
+  width: 0;
+  transition: $ease;
+
+  &.in-view {
+    width: 100%
+  }
+}
+
 // ******************************** Globals
 .center-text {
   text-align: center;
@@ -209,7 +228,7 @@ ul {
 }
 
 .bg {
-  background: #f7f7f5;
+  background: #efefef;
 }
 
 .dark-bg {
@@ -483,7 +502,7 @@ ul {
 // Landing Banner
 .landing-banner {
   background: url('../img/jake-blucker.jpg') no-repeat center center / cover fixed;
-  height: 72vh;
+  height: 88vh;
   width: 100%;
   position: relative;
 
@@ -508,6 +527,7 @@ ul {
     position: absolute;
     left: 6vw;
     top: 6vh;
+    display: none;
 
     .fa {
       border: 1px solid #fff;
@@ -528,16 +548,10 @@ ul {
       }
     }
 
-    h1, h2, .fa { color: #fff; opacity: .9; }
+    .fa { color: #fff; opacity: .9; }
 
     h1 {
-      font-size: 2.5rem;
-      text-shadow: 1px 1px 1px #666;
-    }
-
-    h2 {
-      font-size: 1.8rem;
-      font-weight: 100;
+      display: none;
     }
 
     a {
@@ -545,12 +559,20 @@ ul {
     }
   }
 
-  img {
+  .logo-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    max-height: 40vh;
+    height: 56vh;
+    width: 56vh;
+    border-radius: 50%;
+  }
+
+  .logo {
+    max-height: 30vh;
+    display: none;
+    opacity: .75;
   }
 }
 
@@ -615,12 +637,15 @@ ul {
   }
 }
 
+.hide {
+  display: none;
+}
+
 // ************************************ Containers
 .container {
   width: 95%;
   margin: 0 auto;
   padding: 2rem 0 8rem;
-  background: #fff;
   position: relative;
   z-index: 2;
 }
@@ -631,6 +656,7 @@ ul {
   justify-content: center;
   padding: 0 4rem;
   margin-right: 1rem;
+  background: url('../img/concrete_seamless.png');
 
   h3 {
     &:before,
@@ -649,7 +675,7 @@ ul {
 }
 
 #gallery-slider {
-  background: url('../img/forest.jpg') no-repeat center center / cover;
+  background: url('../img/forest.jpg') no-repeat center bottom / cover;
   flex: 1;
   margin-right: 1rem;
   height: 80rem;
@@ -674,10 +700,18 @@ ul {
 #featured-item-container {
   height: 24rem;
   text-align: center;
+  background: url('../img/wood.jpg') no-repeat center center / cover;
+
+  .callout {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 1rem;
+    margin: 1rem 0 0 0;
+  }
 
   h4 {
-    padding-top: 1rem;
-    margin: 0;
+    margin: 0 0 .5rem;
   }
 }
 
@@ -741,10 +775,16 @@ ul {
 }
 
 #builders-container {
+  background: linear-gradient(to bottom, rgba(0,0,0,.6), rgba(0,0,0,.1)), url('../img/garage.jpg') no-repeat center center / cover fixed;
+  margin: 0 -5% 2rem;
+  padding: 12rem 3.5rem;
+
   .col-1 {
     text-align: center;
+    margin-bottom: 0;
     height: auto;
     box-shadow: none;
+    box-shadow: 0 0 12rem #333;
   }
 
   .match-height {
@@ -801,6 +841,11 @@ ul {
     }
   }
 
+  .callout-text {
+    height: 4rem;
+    margin-top: -.5rem;
+  }
+
   .shop-callout {
     color: #fff;
     background: #000;
@@ -823,14 +868,15 @@ ul {
   }
 
   h5 {
-    text-transform: uppercase;
+    margin-top: 0;
   }
 }
 
 #garage-container {
   flex: 2;
   height: 80rem;
-  position: relative;
+  text-align: center;
+  background: url('../img/concrete_seamless.png');
 
   .garage-title {
     background: url('../img/garage-bg.jpg') no-repeat center center / cover;
@@ -840,30 +886,28 @@ ul {
     line-height: 16rem;
     padding-left: 2rem;
     font-size: 3rem;
+    text-align: left;
   }
 
   .garage-items {
     .callout {
-      border: .15rem solid rgba(0,0,0,.75);
-      margin: 2rem 0;
-      border-radius: 5px;
+      display: block;
+      margin: 3rem 0;
       background: #efefef;
       transition: $ease;
 
       h3 {
-        color: rgba(0,0,0,.75);
-        padding: 1rem 0;
+        padding: 1rem;
         margin: 1rem 0;
         font-size: 2rem;
+        background: #333;
+        color: #fff;
+        border-radius: 5px;
       }
 
       &:hover {
-        background: #333;
+        opacity: .75;
         cursor: pointer;
-
-        h3 {
-          color: #fff;
-        }
       }
     }
   }
@@ -872,16 +916,22 @@ ul {
     margin-bottom: 0;
   }
 
+  img {
+    max-width: 12rem;
+    height: auto;
+    margin-top: 2rem;
+  }
+
   h4 {
     margin: 0;
   }
 }
 
 #resources-container {
-  background: url('../img/wood.jpg') no-repeat center center / cover;
   flex: 1;
   flex-direction: column;
   height: 80rem;
+  background: url('../img/concrete_seamless.png');
 
   .link-title {
     margin-bottom: 3rem;
@@ -889,17 +939,16 @@ ul {
 
   .callout {
     display: flex;
-    width: 12rem;
+    width: 90%;
     height: 12rem;
     background: #aaa;
-    border-radius: 50%;
     text-align: center;
     justify-content: center;
     align-items: center;
     position: relative;
     transition: $ease;
     margin-bottom: 2rem;
-    box-shadow: 0 0 8px #000;
+    box-shadow: 0 0 4px #333;
 
     &:hover {
       cursor: pointer;
@@ -907,9 +956,9 @@ ul {
   }
 
   span {
-    background: #333;
+    background: #000;
     color: #fff;
-    padding: .5rem;
+    padding: 1rem;
     transition: $ease;
   }
 
@@ -986,10 +1035,16 @@ ul {
       color:  #fff;
       background: #000;
       transition: $ease;
+      overflow: hidden;
     }
 
     img {
       opacity: 0;
+      position: relative;
+      top:0;
+      left: 0;
+      width: 0;
+      height: 0;
     }
 
     span {
@@ -1180,26 +1235,160 @@ ul {
 }
 
 
+@media (max-width: 800px) {
+  html { font-size: 1.5vw; }
+
+  .hide {
+    display: none !important;
+  }
+
+  .margin-left {
+    margin-left: 0;
+  }
+
+  .col-2 {
+    margin-left: 0;
+
+    hr {
+      margin-left: 0;
+    }
+  }
+
+  #featured-merch,
+  #inspiration-container {
+    margin-left: 0;
+  }
+
+  #builders-container {
+    height: auto;
+
+    .table-row {
+      flex-direction: column;
+    }
+
+    .match-height {
+      height: auto;
+    }
+
+    .callout-text {
+      margin-top: -4rem;
+    }
+
+    .callout {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    .shop-callout {
+      left: 30%;
+      right: 30%;
+    }
+
+    .col-1 {
+      width: 100%;
+
+      &:first-of-type {
+        height: 42rem;
+        margin-bottom: 4rem;
+      }
+    }
+  }
+
+  #resources {
+    .callout {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
 @media (max-width: 600px) {
-  h1 {
-    font-size: 6rem;
+  html { font-size: 2.5vw; }
+
+  .fa-bars,
+  .fa-close {
+    font-size: 3rem !important;
+  }
+
+  small {
+    font-size: 1.5rem;
   }
 
   .landing-banner {
+    .landing-container {
+      span {
+        color: #fff;
+      }
+    }
+  }
 
-    a {
-      font-size: 6rem;
+  #about-container {
+    height: auto;
+    padding-bottom: 3rem;
+
+    h3 {
+      &:before,
+      &:after {
+        content: '----';
+        padding: 0 2rem;
+      }
+    }
+  }
+
+  #builders-container {
+    .col-1 {
+      &:first-of-type {
+        height: 35rem;
+        margin-bottom: 4rem;
+      }
     }
 
-    .landing-container {
-      left: 1rem;
-      top: 2rem;
+    .callout-text {
+      margin-top: -.25rem;
+    }
 
-      h2 {
-        padding: 1rem 0 0 0;
+    .shop-callout {
+      left: 2rem;
+      right: 2rem;
+    }
+  }
+
+  #featured-merch {
+    height: auto;
+    padding-bottom: 3rem;
+
+    .callout {
+      span {
         font-size: 2rem;
-        letter-spacing: 1px;
       }
+    }
+
+    .table-row {
+      flex-direction: column;
+    }
+
+    .tooltip {
+      width: 100%;
+      height: 26rem;
+    }
+  }
+
+  #inspiration-container {
+    .col-1 {
+      span {
+        opacity: 0 !important;
+      }
+    }
+  }
+
+  #resources-container {
+    height: 100rem;
+
+    .callout {
+      height: 24rem;
+    }
+
+    span {
+      font-size: 2rem;
     }
   }
 }
